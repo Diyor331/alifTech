@@ -264,9 +264,11 @@ class _AddEditTodoState extends State<AddEditTodo> {
 
       refreshTodos();
 
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => Main(),
-      ));
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => Main()),
+            (Route<dynamic> route) => false,
+      );
     }
   }
 
