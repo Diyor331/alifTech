@@ -160,7 +160,7 @@ class _AddEditTodoState extends State<AddEditTodo> {
             //Check status
             checkStatus
                 ? const Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: EdgeInsets.only(top:8.0),
                     child: Text(
                       'Выберите статус задачи',
                       style: TextStyle(
@@ -169,8 +169,8 @@ class _AddEditTodoState extends State<AddEditTodo> {
                       ),
                     ),
                   )
-                : const SizedBox(),
-            const SizedBox(height: 15),
+                : const SizedBox(height: 20),
+            const SizedBox(height: 20),
             //todoTime
             ListTile(
               tileColor: Colors.grey.shade100,

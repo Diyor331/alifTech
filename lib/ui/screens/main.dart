@@ -193,8 +193,6 @@ class _MainState extends State<Main> {
                                     ],
                                   ),
                                 )
-                              : item.todoStatus != '1'
-                                  ? const Center(child: Text('Нет задач'))
                                   : const SizedBox();
                         },
                       ),
@@ -263,8 +261,7 @@ class _MainState extends State<Main> {
                                     ],
                                   ),
                                 )
-                              : item.todoStatus != '2'
-                              ? const Center(child: Text('Нет задач'))
+
                               : const SizedBox();
                         },
                       ),
